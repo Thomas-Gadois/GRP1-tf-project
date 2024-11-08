@@ -1,6 +1,6 @@
 #data.tf
 # Data source pour obtenir l'AMI Amazon Linux 2 comptaible
-data "aws_ami" "amazon_linux_2" {
+data "aws_ami" "amazon_linux_2023" {
   most_recent = true
   owners      = ["amazon"]
 
