@@ -8,7 +8,7 @@ variable "region" {
 variable "group_prefix" {
   description = "Préfixe du groupe pour nommer les ressources"
   type        = string
-  default     = "Group1" # Valeur par défaut
+  default     = "Group1"
 }
 
 # Définition de la variable pour le script de démarrage
@@ -26,7 +26,7 @@ variable "group1_ec2_user_data" {
   EOF
 }
 
-# Générateur d'ID unique pour la target 
+# Générateur d'ID unique pour la ressource : aws_inspector_assessment_template
 resource "random_id" "suffix" {
   byte_length = 4
 }

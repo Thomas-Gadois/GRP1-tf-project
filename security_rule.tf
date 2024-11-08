@@ -1,3 +1,5 @@
+#security_rule.tf
+
 # Création du groupe de sécurité
 resource "aws_security_group" "group1_inspector_sg" {
   name        = "${var.group_prefix}InspectorSG"

@@ -1,3 +1,4 @@
+#EC2.tf
 resource "aws_instance" "group1_ec2" {
   ami                    = data.aws_ami.amazon_linux_2023.id
   instance_type          = "t2.micro"

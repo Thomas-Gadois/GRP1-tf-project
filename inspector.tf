@@ -1,3 +1,5 @@
+#inspector.tf
+
 # Groupe de ressources Amazon Inspector
 resource "aws_inspector_resource_group" "group1_resource_group" {
   tags = {

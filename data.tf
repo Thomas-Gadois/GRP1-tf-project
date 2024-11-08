@@ -1,11 +1,6 @@
 #data.tf
-
-data "aws_vpc" "default" {
-  default = true
-}
-
-# Data source pour obtenir l'AMI Amazon Linux 2023 la plus récente
-data "aws_ami" "amazon_linux_2023" {
+# Data source pour obtenir l'AMI Amazon Linux 2 comptaible
+data "aws_ami" "amazon_linux_2" {
   most_recent = true
   owners      = ["amazon"]
 
